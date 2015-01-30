@@ -1,0 +1,3 @@
+.hg-stripe-donation-message-box { display:none; padding: 5px 10px; margin: 10px 0; color: #fff; }
+.hg-stripe-donation-success-message-box { background: #4B914F; }
+.hg-stripe-donation-error-message-box { background: #FF4240; }

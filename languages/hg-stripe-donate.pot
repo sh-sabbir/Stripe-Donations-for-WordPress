@@ -1,0 +1,256 @@
+# Copyright (C) 2014 Stripe Donation for WordPress
+# This file is distributed under the same license as the Stripe Donation for WordPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Stripe Donation for WordPress 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/hg-stripe-donate\n"
+"POT-Creation-Date: 2014-11-03 17:22:20+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: hg-stripe-donate.php:60 hg-stripe-donate.php:61
+msgid "Donate"
+msgstr ""
+
+#: hg-stripe-donate.php:113
+msgid "A donation template could not be found for %s.php"
+msgstr ""
+
+#: hg-stripe-donate.php:202
+msgid "Please enter an amount you would like to donate"
+msgstr ""
+
+#: includes/admin-thickbox.php:11
+msgid "Add Donation"
+msgstr ""
+
+#: includes/admin-thickbox.php:70
+msgid "Optional Settings"
+msgstr ""
+
+#: includes/admin-thickbox.php:74
+msgid "Test Mode"
+msgstr ""
+
+#: includes/admin-thickbox.php:78
+msgid "Validate ZipCode?"
+msgstr ""
+
+#: includes/admin-thickbox.php:82
+msgid "Allow Remember Me?"
+msgstr ""
+
+#: includes/admin-thickbox.php:87
+msgid "ID"
+msgstr ""
+
+#: includes/admin-thickbox.php:91
+msgid "Square Image URL"
+msgstr ""
+
+#: includes/admin-thickbox.php:95
+msgid "User Specified Amount"
+msgstr ""
+
+#: includes/admin-thickbox.php:96
+msgid "Exact (specify below"
+msgstr ""
+
+#: includes/admin-thickbox.php:97
+msgid "Custom"
+msgstr ""
+
+#: includes/admin-thickbox.php:102
+msgid "Custom layout filename (without .php)"
+msgstr ""
+
+#: includes/admin-thickbox.php:107
+msgid "Preset amount (in pennies)"
+msgstr ""
+
+#: includes/admin-thickbox.php:112
+msgid "Donate Button Label"
+msgstr ""
+
+#: includes/admin-thickbox.php:117
+msgid "Checkout Button Label (in Stripe Popup)"
+msgstr ""
+
+#: includes/admin-thickbox.php:121
+msgid "Insert Stripe Donation Button"
+msgstr ""
+
+#: includes/admin-thickbox.php:122
+msgid "Cancel"
+msgstr ""
+
+#: includes/ajax-post.php:35
+msgid "A Stripe Token could not be created, please check your logs in your Stripe dashboard"
+msgstr ""
+
+#: includes/ajax-post.php:39
+msgid "There has been a processing error and no transaction was able to take place. Please try again. If the problem persists, please contact us."
+msgstr ""
+
+#: includes/ajax-post.php:46
+msgid "Thanks for your donation!"
+msgstr ""
+
+#: includes/ajax-post.php:70 includes/ajax-post.php:96
+msgid "The payment service cannon be reached. Please try again."
+msgstr ""
+
+#: includes/ajax-post.php:83
+msgid "The Stripe payment system has not been setup properly. Please contact the website administrator."
+msgstr ""
+
+#: includes/ajax-post.php:110
+msgid "Credit Card Error. Please try again or try another card."
+msgstr ""
+
+#: includes/ajax-post.php:114 includes/ajax-post.php:118
+msgid "Donation system is done at this time, please try again soon"
+msgstr ""
+
+#: includes/settings.php:15
+msgid "Stripe Donation Settings"
+msgstr ""
+
+#: includes/settings.php:29
+msgid "Settings"
+msgstr ""
+
+#: includes/settings.php:38
+msgid "Register"
+msgstr ""
+
+#: includes/settings.php:81
+msgid "Register for Updates"
+msgstr ""
+
+#: includes/settings.php:85
+msgid "Test: Secret Key"
+msgstr ""
+
+#: includes/settings.php:86
+msgid "Test: Publishable Key"
+msgstr ""
+
+#: includes/settings.php:87
+msgid "Live: Secret Key"
+msgstr ""
+
+#: includes/settings.php:88
+msgid "Live: Publishable Key"
+msgstr ""
+
+#: includes/settings.php:92
+msgid "Checkout Name"
+msgstr ""
+
+#: includes/settings.php:92
+msgid "This text is displayed in the Stripe Checkout Popup directly under the image if one has been uploaded."
+msgstr ""
+
+#: includes/settings.php:93
+msgid "Checkout Description"
+msgstr ""
+
+#: includes/settings.php:93
+msgid "This text is displayed in the Stripe Checkout Popup directly below the name above. It is generally used to explain what the donation is about."
+msgstr ""
+
+#: includes/settings.php:94
+msgid "Checkout Image"
+msgstr ""
+
+#: includes/settings.php:94
+msgid "URL to a square image that will appear in the top of the Stripe Checkout Popup."
+msgstr ""
+
+#: includes/settings.php:95
+msgid "Currency"
+msgstr ""
+
+#: includes/settings.php:95
+msgid "A list of currency codes can be found in the Stripe documentation"
+msgstr ""
+
+#: includes/settings.php:96
+msgid "Success Message"
+msgstr ""
+
+#: includes/settings.php:96
+msgid "The default success message returned through the ajax post"
+msgstr ""
+
+#: includes/settings.php:97
+msgid "Credit Card Description"
+msgstr ""
+
+#: includes/settings.php:97
+msgid "This will prepend a statement description on the end of your users credit card bill. "
+msgstr ""
+
+#: includes/settings.php:104
+msgid "Stripe API Keys"
+msgstr ""
+
+#: includes/settings.php:107
+msgid "The following four field will sync your donation buttons to your Stripe account."
+msgstr ""
+
+#: includes/settings.php:110
+msgid "Your Stripe API keys are found here"
+msgstr ""
+
+#: includes/settings.php:118
+msgid "Default Settings"
+msgstr ""
+
+#: includes/settings.php:119
+msgid "These settings will be used by default. Some of them maybe overwritten by using parameters in your shortcode. "
+msgstr ""
+
+#: includes/settings.php:122
+msgid "See the documentation for more details"
+msgstr ""
+
+#: includes/settings.php:132
+msgid "Defined by the constant HG_STRIPE_DONATION_LICENSE most likely in wp-config.php"
+msgstr ""
+
+#: includes/settings.php:138
+msgid "This is used to update your plugin when new versions become available."
+msgstr ""
+
+#: includes/settings.php:140
+msgid "Insert the email address you used to purchase this plugin."
+msgstr ""
+
+#: layouts/user-amount.php:3
+msgid "Amount"
+msgstr ""
+
+#: layouts/user-amount.php:3
+msgid "$"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Stripe Donation for WordPress"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Donate using Stripe Checkout without leaving the page."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Hal Gatewood"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.halgatewood.com/"
+msgstr ""
