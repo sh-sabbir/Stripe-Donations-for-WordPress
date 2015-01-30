@@ -59,8 +59,7 @@ define( 'HG_STRIPE_CC_STATEMENT', 'Donation');
 add_action( 'admin_init', 'hg_stripe_donation_setting_init' );
 function hg_stripe_donation_setting_init()
 {
-    register_setting( 'hg-stripe-donate-settings-group', 'edd-updater-email-stripe-donation' );
-    
+
     // KEYS
     register_setting( 'hg-stripe-donate-settings-group', 'hg-stripe-donation-api-secret-test' );
     register_setting( 'hg-stripe-donate-settings-group', 'hg-stripe-donation-api-pub-test' );
@@ -77,9 +76,6 @@ function hg_stripe_donation_setting_init()
     
 	// ---- //
 
-    add_settings_section( 'hg-stripe-donate-settings-group', '', 'hg_stripe_donation_empty_description', 'hg-stripe-donate' );
-	add_settings_field( 'edd-updater-email-stripe-donation', __('Register for Updates', 'hg-stripe-donate'), 'hg_stripe_donation_updater_email', 'hg-stripe-donate', 'hg-stripe-donate-settings-group' );
-	
 	// KEYS
 	add_settings_section( 'hg-stripe-donate-settings-api-group', '', 'hg_stripe_donation_apikeys_description', 'hg-stripe-donate' );
 	add_settings_field( 'hg-stripe-donation-api-secret-test', __('Test: Secret Key', 'hg-stripe-donate'), 'hg_stripe_donation_text_field', 'hg-stripe-donate', 'hg-stripe-donate-settings-api-group', array('field_name' => 'hg-stripe-donation-api-secret-test') );
@@ -122,24 +118,6 @@ function hg_stripe_donation_defaults_description()
 	echo __('See the documentation for more details', 'hg-stripe-donate');
 	echo " &rarr;</a>";
 	echo "</p>";
-}
-
-// REGISTER EMAIL
-function hg_stripe_donation_updater_email()
-{
-	if( defined('HG_STRIPE_DONATION_LICENSE') )
-	{
-		echo "<em>" . __('Defined by the constant HG_STRIPE_DONATION_LICENSE most likely in wp-config.php', 'hg-stripe-donate') . "</em>";
-	}
-	else 
-	{
-		echo "<input type='text' name='edd-updater-email-stripe-donation' value='" . esc_attr( get_option( 'edd-updater-email-stripe-donation' ) ) . "' style='width:70%;' />";
-		echo "<p>";
-		echo __("This is used to update your plugin when new versions become available.", 'hg-stripe-donate');
-		echo "<br>";
-		echo __("Insert the email address you used to purchase this plugin.", 'hg-stripe-donate');
-		echo "</p>";
-	}
 }
 
 function hg_stripe_donation_text_field( $args )

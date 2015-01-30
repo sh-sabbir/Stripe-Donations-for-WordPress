@@ -13,9 +13,6 @@ Text Domain: hg-stripe-donate
 */
 
 
-define('HG_STRIPE_DONATION_VERSION', '1.0');
-
-
 // AJAX POST OF DONATION
 require_once( dirname(__FILE__) . "/includes/ajax-post.php" );
 
@@ -219,38 +216,5 @@ function hg_stripe_donate_error( $msg )
 	status_header(404);
 	die( $msg );
 }
-
-
-// EDD AUTO UPLOADER
-if( is_admin() AND ( get_option('edd-updater-email-stripe-donation') OR defined('HG_STRIPE_DONATION_LICENSE') ) )
-{
-	$edd_auto_updater_script = dirname(__FILE__) . "/includes/edd-remote-auto-updater.php";
-	
-	if( !class_exists('edd_remote_auto_updater') AND file_exists($edd_auto_updater_script) )
-	{
-		include_once($edd_auto_updater_script);
-	}
-	
-	$updater_email = get_option('edd-updater-email-stripe-donation');
-	if( defined('HG_STRIPE_DONATION_LICENSE') )
-	{
-		$updater_email = HG_STRIPE_DONATION_LICENSE;
-	}
-
-	if( class_exists('edd_remote_auto_updater') )
-	{
-		// vars
-		$settings = array(
-			'version' 		=> HG_STRIPE_DONATION_VERSION,
-			'remote' 		=> 'https://halgatewood.com/',
-			'slug' 			=> 'stripe-donations-wordpress',
-			'email'			=> $updater_email,
-			'basename' 		=> plugin_basename(__FILE__)
-		);
-		
-		new edd_remote_auto_updater( $settings );
-	}
-}
-
 
 
