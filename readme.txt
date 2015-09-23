@@ -1,4 +1,4 @@
-=== Stripe Checkout AJAX Donations ===
+=== AJAX Donations via Stripe Checkout ===
 Contributors: halgatewood
 Donate link: https://halgatewood.com/donate/
 Tags: payments,stripe checkout,donations,donate,ajax,shortcode,payment,payment processing,donation
