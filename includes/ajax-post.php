@@ -53,7 +53,7 @@ function hg_stripe_donate_post()
 				  	"currency" => $currency_code,
 				  	"card" => $token,
 				  	"description" => '',
-				  	"statement_description" => $cc_statement
+				  	"statement_descriptor" => $cc_statement
 				));
 				die($success_message);
 			} 
