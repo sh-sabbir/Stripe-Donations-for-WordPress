@@ -32,16 +32,7 @@ function hg_stripe_donation_plugin_action_links( $links, $file )
 	{
 		array_unshift( $links, $settings_link );
 	}
-	
-	if( !get_option('edd-updater-email-stripe-donation') )
-	{
-		$register_link = '<a href="' . admin_url( 'options-general.php?page=hg-stripe-donate' ) . '">' . esc_html__( 'Register', 'hg-stripe-donate' ) . '</a>';
-	
-		if ( $file == 'hg-stripe-donate/hg-stripe-donate.php' )
-		{
-			array_unshift( $links, $register_link );
-		}
-	}
+
 	return $links;
 }
 add_filter( 'plugin_action_links', 'hg_stripe_donation_plugin_action_links', 10, 2 );
